@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO Tailoring | Atexco Tagum — Sublimation Printing, Heat Press & Tailoring</title>
+  <meta name="description" content="Professional sublimation printing, heat press, and tailoring services in Tagum City and Panabo City, Davao del Norte. Trusted partner for teams, shops, and garment businesses.">
+  <meta name="keywords" content="sublimation printing Tagum, heat press Panabo, jersey printing Davao, tailoring Tagum City, B2B printing Davao del Norte">
+
+  <!-- Inter Font (Clean, Corporate, Highly Legible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & VARIABLES
+       ========================================================================== */
+    :root {
+      --primary: #0B1F3A;         /* Deep Navy Blue */
+      --secondary: #174F91;       /* Royal Blue */
+      --accent: #BFC5CC;          /* Silver Accent */
+      --accent-light: #E4E7EB;    /* Light Silver Border */
+      --bg-white: #FFFFFF;
+      --bg-light: #F3F5F7;        /* Light Gray */
+      --text-dark: #252A30;       /* Dark Charcoal */
+      --text-muted: #5A626E;      /* Secondary Gray */
+      --border-color: #DDE2E7;
+      --max-width: 1200px;
+      --transition: all 0.25s ease-in-out;
+      --shadow-sm: 0 1px 3px rgba(11, 31, 58, 0.08);
+      --shadow-md: 0 4px 16px rgba(11, 31, 58, 0.08);
+      --shadow-lg: 0 10px 30px rgba(11, 31, 58, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--bg-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ==========================================================================
+       TYPOGRAPHY & UTILITY
+       ========================================================================== */
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 48px auto;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background-color: var(--secondary);
+      margin: 0 auto 24px auto;
+    }
+
+    .divider-left {
+      margin-left: 0;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 13px 26px;
+      border-radius: 4px;
+      transition: var(--transition);
+      letter-spacing: 0.3px;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #fff;
+      border: 1px solid var(--primary);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    .btn-outline-white {
+      background-color: transparent;
+      color: #fff;
+      border: 1.5px solid #fff;
+    }
+
+    .btn-outline-white:hover {
+      background-color: #fff;
+      color: var(--primary);
+    }
+
+    .btn-royal {
+      background-color: var(--secondary);
+      color: #fff;
+    }
+
+    .btn-royal:hover {
+      background-color: #103c72;
+      color: #fff;
+    }
+
+    /* ==========================================================================
+       TOP BAR & HEADER
+       ========================================================================== */
+    .top-bar {
+      background-color: var(--primary);
+      color: var(--accent);
+      font-size: 0.82rem;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(191, 197, 204, 0.15);
+    }
+
+    .top-bar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .top-bar-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .top-bar-item a {
+      color: var(--accent);
+    }
+
+    .top-bar-item a:hover {
+      color: #fff;
+    }
+
+    .site-header {
+      background-color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-logo {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+
+    .brand-subtitle {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-top: 2px;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .main-nav a {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      position: relative;
+    }
+
+    .main-nav a:hover {
+      color: var(--secondary);
+    }
+
+    .nav-cta {
+      margin-left: 12px;
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .hamburger-icon {
+      width: 24px;
+      height: 2px;
+      background: var(--primary);
+      position: relative;
+      display: inline-block;
+      transition: var(--transition);
+    }
+
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+      content: '';
+      width: 24px;
+      height: 2px;
+      background: var(--primary);
+      position: absolute;
+      left: 0;
+      transition: var(--transition);
+    }
+
+    .hamburger-icon::before { top: -7px; }
+    .hamburger-icon::after { bottom: -7px; }
+
+    .menu-open .hamburger-icon {
+      background: transparent;
+    }
+
+    .menu-open .hamburger-icon::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    .menu-open .hamburger-icon::after {
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      background: linear-gradient(rgba(11, 31, 58, 0.88), rgba(11, 31, 58, 0.92)),
+                  url('https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 100px 0 110px 0;
+      border-bottom: 4px solid var(--secondary);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background-color: rgba(23, 79, 145, 0.35);
+      border: 1px solid var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .hero-desc {
+      font-size: 1.12rem;
+      line-height: 1.7;
+      color: var(--accent);
+      margin-bottom: 36px;
+      max-width: 600px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(191, 197, 204, 0.25);
+      padding: 32px;
+      border-radius: 6px;
+    }
+
+    .hero-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+      border-bottom: 1px solid rgba(191, 197, 204, 0.2);
+      padding-bottom: 10px;
+    }
+
+    .quick-specs-list {
+      list-style: none;
+    }
+
+    .quick-specs-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.92rem;
+      color: #E4E7EB;
+      margin-bottom: 12px;
+    }
+
+    .quick-specs-list svg {
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+
+    /* ==========================================================================
+       ABOUT SECTION
+       ========================================================================== */
+    .about-section {
+      padding: 90px 0;
+      background-color: var(--bg-white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-content p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .about-features {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .feature-point {
+      border-left: 3px solid var(--secondary);
+      padding-left: 14px;
+    }
+
+    .feature-point h4 {
+      font-size: 0.95rem;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .feature-point p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    .about-image-wrapper {
+      position: relative;
+    }
+
+    .about-image {
+      border-radius: 6px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: -20px;
+      right: 20px;
+      background-color: var(--primary);
+      color: #fff;
+      padding: 18px 24px;
+      border-radius: 4px;
+      border: 2px solid var(--secondary);
+      box-shadow: var(--shadow-md);
+    }
+
+    .experience-badge strong {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .experience-badge span {
+      font-size: 0.8rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ==========================================================================
+       SERVICES SECTION
+       ========================================================================== */
+    .services-section {
+      padding: 90px 0;
+      background-color: var(--bg-light);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+      border-color: var(--secondary);
+    }
+
+    .service-img-wrapper {
+      position: relative;
+      height: 210px;
+      overflow: hidden;
+      background-color: var(--primary);
+    }
+
+    .service-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover .service-img {
+      transform: scale(1.03);
+    }
+
+    .service-num {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 3px;
+      border: 1px solid var(--accent);
+    }
+
+    .service-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-title {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .service-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    /* ==========================================================================
+       PRICE LIST SECTION
+       ========================================================================== */
+    .pricing-section {
+      padding: 90px 0;
+      background-color: var(--bg-white);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+
+    .pricing-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .pricing-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--secondary);
+    }
+
+    .pricing-card.featured {
+      border: 2px solid var(--secondary);
+      background-color: #FAFCFE;
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--secondary);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 14px;
+      border-radius: 12px;
+    }
+
+    .pricing-header {
+      text-align: center;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--accent-light);
+      padding-bottom: 20px;
+    }
+
+    .pricing-category {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .pricing-price {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .pricing-unit {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-top: 6px;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 30px;
+      flex-grow: 1;
+    }
+
+    .pricing-features li {
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--accent-light);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .pricing-features svg {
+      flex-shrink: 0;
+      color: var(--secondary);
+      margin-top: 2px;
+    }
+
+    .pricing-notice {
+      background-color: var(--bg-light);
+      border-left: 4px solid var(--secondary);
+      padding: 18px 24px;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      max-width: 860px;
+      margin: 0 auto 36px auto;
+    }
+
+    .pricing-notice strong {
+      color: var(--primary);
+    }
+
+    /* ==========================================================================
+       B2B PARTNERSHIP SECTION
+       ========================================================================== */
+    .partnership-section {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 85px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .partnership-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .partnership-content h2 {
+      color: #fff;
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .partnership-content p {
+      font-size: 1.05rem;
+      color: var(--accent);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .partnership-benefits-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(191, 197, 204, 0.2);
+      border-radius: 6px;
+      padding: 32px;
+    }
+
+    .benefits-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 18px;
+      border-bottom: 1px solid rgba(191, 197, 204, 0.2);
+      padding-bottom: 10px;
+    }
+
+    .benefits-list {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .benefits-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.94rem;
+      color: #F3F5F7;
+      margin-bottom: 12px;
+    }
+
+    .benefits-list svg {
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       PORTFOLIO / GALLERY SECTION
+       ========================================================================== */
+    .gallery-section {
+      padding: 90px 0;
+      background-color: var(--bg-light);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: var(--primary);
+      height: 260px;
+      cursor: pointer;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(11, 31, 58, 0.9) 0%, rgba(11, 31, 58, 0.2) 100%);
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .gallery-caption {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 31, 58, 0.95);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-content {
+      max-width: 900px;
+      width: 100%;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .lightbox-img {
+      width: 100%;
+      max-height: 60vh;
+      object-fit: contain;
+      background: #000;
+    }
+
+    .lightbox-details {
+      padding: 20px 24px;
+      background: #fff;
+    }
+
+    .lightbox-details h4 {
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .lightbox-details p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      background: #fff;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--primary);
+      cursor: pointer;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* ==========================================================================
+       CONTACT & LOCATIONS SECTION
+       ========================================================================== */
+    .contact-section {
+      padding: 90px 0;
+      background-color: var(--bg-white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .contact-info-col h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .contact-detail-card {
+      margin-bottom: 28px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      background-color: var(--bg-light);
+      border: 1px solid var(--accent-light);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--secondary);
+    }
+
+    .contact-text strong {
+      display: block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .contact-text a,
+    .contact-text span {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .contact-text a:hover {
+      color: var(--secondary);
+      text-decoration: underline;
+    }
+
+    .location-box {
+      background-color: var(--bg-light);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+
+    .location-box h5 {
+      font-size: 0.95rem;
+      color: var(--primary);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .location-box p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .map-placeholder-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+
+    .map-placeholder-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact / Quote Form */
+    .form-container {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 34px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .form-container h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .form-container p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .form-group label span {
+      color: #c92a2a;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 11px 14px;
+      font-size: 0.92rem;
+      font-family: inherit;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background-color: #fff;
+      color: var(--text-dark);
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px rgba(23, 79, 145, 0.12);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-status {
+      display: none;
+      padding: 14px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      margin-top: 18px;
+    }
+
+    .form-status.success {
+      display: block;
+      background-color: #ebfbee;
+      color: #2b8a3e;
+      border: 1px solid #b2f2bb;
+    }
+
+    .form-status.error {
+      display: block;
+      background-color: #fff5f5;
+      color: #c92a2a;
+      border: 1px solid #ffc9c9;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 60px 0 24px 0;
+      border-top: 3px solid var(--secondary);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(191, 197, 204, 0.2);
+    }
+
+    .footer-brand h4 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .footer-tagline {
+      font-size: 0.88rem;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #C3CAD2;
+      line-height: 1.6;
+    }
+
+    .footer-col h5 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      font-size: 0.88rem;
+      color: var(--accent);
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+      padding-left: 4px;
+    }
+
+    .footer-contact-info p {
+      font-size: 0.88rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .footer-contact-info a {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.82rem;
+      color: var(--accent);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE DESIGN (TABLET & MOBILE)
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .hero-grid,
+      .about-grid,
+      .partnership-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .hero-title {
+        font-size: 2.3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar {
+        display: none; /* Hide dense bar on small mobile for cleaner viewport */
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .main-nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 2px solid var(--secondary);
+        box-shadow: var(--shadow-md);
+        padding: 20px 0;
+        display: none;
+      }
+
+      .main-nav.open {
+        display: block;
+      }
+
+      .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+
+      .main-nav li {
+        width: 100%;
+      }
+
+      .main-nav a {
+        display: block;
+        padding: 12px 24px;
+        border-bottom: 1px solid var(--accent-light);
+      }
+
+      .nav-cta {
+        margin: 16px 24px 0 24px;
+        display: block;
+        text-align: center;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-features {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP CONTACT BAR
+       ========================================================================== -->
+  <aside class="top-bar" aria-label="Quick Contact Information">
+    <div class="container top-bar-content">
+      <div class="top-bar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span>Tagum City & Panabo City, Davao del Norte</span>
+      </div>
+      <div class="top-bar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>Open Daily: 9:00 AM – 9:00 PM</span>
+      </div>
+      <div class="top-bar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <a href="tel:09514556757">09514556757</a> / <a href="tel:09516216321">09516216321</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" aria-label="CEO Tailoring and Atexco Tagum Home">
+        <span class="brand-title">CEO TAILORING</span>
+        <span class="brand-subtitle">ATEXCO TAGUM</span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-icon"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Price List</a></li>
+          <li><a href="#partnership">B2B Partners</a></li>
+          <li><a href="#works">Our Works</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn-royal nav-cta d-none-mobile">GET A QUOTE</a>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HOMEPAGE HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-badge">Tagum & Panabo Production Facility</span>
+        <h1 class="hero-title">YOUR DESIGN.<br>OUR PRINTING.<br>YOUR VISION.</h1>
+        <p class="hero-desc">
+          From sublimation printing to heat pressing and customized garments, CEO Tailoring | Atexco Tagum provides printing solutions for tailoring businesses, garment makers, organizations, and individual customers.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary" style="background-color: var(--secondary);">VIEW OUR SERVICES</a>
+          <a href="#contact" class="btn btn-outline-white">REQUEST A QUOTE</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-card">
+          <h3>Production Capabilities</h3>
+          <ul class="quick-specs-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Up to 72-Inch</strong> High-Speed Paper Width</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Industrial Flatbed & Rotary Heat Pressing</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Customer Fabric Supply Welcomed</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Full Custom Sportswear & Tailoring Line</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Subcontract B2B Capacity for Garment Shops</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT US SECTION
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <!-- Industrial garment / printing photography -->
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="Sublimation printing and heat press equipment" class="about-image" loading="lazy">
+          <div class="experience-badge">
+            <strong>DAVAO REGION</strong>
+            <span>Tagum & Panabo Hubs</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-eyebrow">Established Garment Production</span>
+          <h2 class="section-title">ABOUT CEO TAILORING | ATEXCO TAGUM</h2>
+          <div class="divider divider-left"></div>
+
+          <p>
+            CEO Tailoring | Atexco Tagum provides sublimation printing, heat press, and tailoring services for customers and businesses looking for reliable printing and garment solutions.
+          </p>
+          <p>
+            We work with individual customers, tailoring shops, sportswear makers, and garment businesses. We also welcome business partnerships with shops that need an additional printing supplier for their production.
+          </p>
+          <p>
+            Our goal is to provide quality printing services and build long-term working relationships with our customers and business partners.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-point">
+              <h4>Industrial Precision</h4>
+              <p>Sharp color rendering and durable heat transfers designed to endure washing and heavy use.</p>
+            </div>
+            <div class="feature-point">
+              <h4>B2B Subcontracting</h4>
+              <p>Flexible capacity support for local tailoring shops experiencing production backlogs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OUR SERVICES SECTION
+       ========================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-eyebrow">What We Offer</span>
+        <h2 class="section-title">OUR SERVICES</h2>
+        <div class="divider"></div>
+        <p class="section-desc">Reliable garment engineering, sublimation printing, and assembly under strict industrial standards.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <span class="service-num">SERVICE 01</span>
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Sublimation Printing" class="service-img" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">SUBLIMATION PRINTING</h3>
+            <p class="service-desc">Professional sublimation printing for custom designs, sportswear, jerseys, uniforms, and other compatible fabric applications.</p>
+            <a href="#contact" class="btn btn-secondary">Inquire Now</a>
+          </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <span class="service-num">SERVICE 02</span>
+            <img src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?auto=format&fit=crop&w=800&q=80" alt="Printing and Heat Press" class="service-img" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">PRINTING + HEAT PRESS</h3>
+            <p class="service-desc">We provide both printing and heat pressing services. Customers may supply their own fabric, subject to compatibility and specifications.</p>
+            <a href="#pricing" class="btn btn-secondary">Check Rates</a>
+          </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <span class="service-num">SERVICE 03</span>
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80" alt="Custom Jerseys" class="service-img" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">CUSTOM JERSEYS</h3>
+            <p class="service-desc">Custom jersey printing and garment solutions for teams, organizations, schools, leagues, and sports groups.</p>
+            <a href="#contact" class="btn btn-secondary">Get Jersey Quote</a>
+          </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <span class="service-num">SERVICE 04</span>
+            <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80" alt="Tailoring and Garment Construction" class="service-img" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">TAILORING</h3>
+            <p class="service-desc">Garment sewing and tailoring services for customized clothing, organizational uniforms, and specialized apparel.</p>
+            <a href="#contact" class="btn btn-secondary">Discuss Requirements</a>
+          </div>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <span class="service-num">SERVICE 05</span>
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Business-to-Business Printing" class="service-img" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">BUSINESS-TO-BUSINESS PRINTING</h3>
+            <p class="service-desc">Printing services for tailoring shops, jersey makers, uniform suppliers, and other garment businesses that outsource their printing production.</p>
+            <a href="#partnership" class="btn btn-secondary">Partner With Us</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRICE LIST SECTION
+       ========================================================================== -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-eyebrow">Transparent Pricing</span>
+        <h2 class="section-title">OUR PRINTING RATES</h2>
+        <div class="divider"></div>
+        <p class="section-desc">Sublimation Printing & Heat Press Services</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Rate 1 -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-category">Sublimation Roll</div>
+            <div class="pricing-price">₱65</div>
+            <div class="pricing-unit">per meter</div>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>PRINTING ONLY</strong></span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>72-inch</strong> paper width capacity</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>High-density industrial sublimation ink</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Ready for external heat pressing</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary">Book Meter Run</a>
+        </div>
+
+        <!-- Rate 2 (Featured) -->
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Complete Package</span>
+          <div class="pricing-header">
+            <div class="pricing-category">Full Supply + Press</div>
+            <div class="pricing-price">₱160</div>
+            <div class="pricing-unit">per piece / order</div>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>PRINTING + HEAT PRESS</strong></span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Using OUR fabric</strong></span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Vibrant sublimation transfer</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Quality-inspected pressed panels</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-royal">Order With Fabric</a>
+        </div>
+
+        <!-- Rate 3 -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-category">Customer Fabric</div>
+            <div class="pricing-price">₱90</div>
+            <div class="pricing-unit">per piece</div>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>PRINTING + HEAT PRESS</strong></span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Using CUSTOMER'S OWN fabric</strong></span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Subject to fabric compatibility</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Ideal for tailor shops & makers</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary">Supply Your Fabric</a>
+        </div>
+      </div>
+
+      <div class="pricing-notice">
+        <strong>Important Notice:</strong> Final quotations may depend on fabric compatibility, fabric width, quantity, and order specifications. Please contact us for confirmation before placing an order.
+      </div>
+
+      <div class="text-center">
+        <a href="#contact" class="btn btn-primary">REQUEST A PRICE QUOTATION</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BUSINESS PARTNERSHIP SECTION
+       ========================================================================== -->
+  <section class="partnership-section" id="partnership">
+    <div class="container">
+      <div class="partnership-grid">
+        <div class="partnership-content">
+          <span class="section-eyebrow" style="color: var(--accent);">B2B Subcontracting & Wholesale</span>
+          <h2>LOOKING FOR A RELIABLE PRINTING PARTNER?</h2>
+          <div class="divider divider-left" style="background-color: var(--accent);"></div>
+          <p>
+            Are you running a tailoring shop, jersey-making business, or garment production service?
+          </p>
+          <p>
+            Let us handle your sublimation printing and heat pressing while you focus on sewing and garment production. CEO Tailoring | Atexco Tagum welcomes business partnerships and wholesale printing inquiries.
+          </p>
+          <a href="#contact" class="btn btn-outline-white">DISCUSS A PARTNERSHIP</a>
+        </div>
+
+        <div>
+          <div class="partnership-benefits-card">
+            <h3 class="benefits-title">Partner Benefits</h3>
+            <ul class="benefits-list">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Printing and heat press services under one roof</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Customer-supplied fabric accepted, subject to compatibility</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Wholesale and bulk order inquiries welcomed</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Potential long-term supplier partnerships</span>
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dedicated support for tailoring and garment businesses</span>
+              </li>
+            </ul>
+            <a href="tel:09514556757" class="btn btn-royal" style="width: 100%;">Call B2B Desk: 09514556757</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OUR WORKS / PORTFOLIO SECTION
+       ========================================================================== -->
+  <section class="gallery-section" id="works">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-eyebrow">Production Portfolio</span>
+        <h2 class="section-title">OUR WORKS</h2>
+        <div class="divider"></div>
+        <p class="section-desc">A showcase of finished jerseys, printed fabrics, garment heat transfers, and production runs.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Gallery 1 -->
+        <div class="gallery-item" data-full="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=85" data-title="Finished Sublimation Jerseys" data-desc="Vibrant, fade-resistant customized team jerseys engineered for durability.">
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80" alt="Finished Sublimation Jerseys" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Sportswear</span>
+            <span class="gallery-caption">Finished Sublimation Jerseys</span>
+          </div>
+        </div>
+
+        <!-- Gallery 2 -->
+        <div class="gallery-item" data-full="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=85" data-title="Custom Sportswear" data-desc="Complete uniform cuts tailored to athletic team specifications.">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Custom Sportswear" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Apparel</span>
+            <span class="gallery-caption">Custom Sportswear</span>
+          </div>
+        </div>
+
+        <!-- Gallery 3 -->
+        <div class="gallery-item" data-full="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=85" data-title="Printed Fabric Rolls" data-desc="72-inch continuous sublimation paper and vibrant fabric rolls.">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Printed Fabric" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Printing</span>
+            <span class="gallery-caption">Printed Fabric</span>
+          </div>
+        </div>
+
+        <!-- Gallery 4 -->
+        <div class="gallery-item" data-full="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?auto=format&fit=crop&w=1200&q=85" data-title="Heat-Pressed Garments" data-desc="Consistent pressure and heat application ensuring crisp lines and solid transfers.">
+          <img src="https://images.unsplash.com/photo-1504270997636-07ddfbd48945?auto=format&fit=crop&w=600&q=80" alt="Heat-Pressed Garments" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Heat Press</span>
+            <span class="gallery-caption">Heat-Pressed Garments</span>
+          </div>
+        </div>
+
+        <!-- Gallery 5 -->
+        <div class="gallery-item" data-full="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=85" data-title="Printing Equipment" data-desc="Industrial-grade printers and precision transfer systems in Tagum.">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Printing Equipment" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Machinery</span>
+            <span class="gallery-caption">Printing Equipment</span>
+          </div>
+        </div>
+
+        <!-- Gallery 6 -->
+        <div class="gallery-item" data-full="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=85" data-title="Tailoring & Garment Production" data-desc="Detailed panel assembly, collar construction, and stitching.">
+          <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=600&q=80" alt="Tailoring and Garment Production" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Tailoring</span>
+            <span class="gallery-caption">Tailoring & Garment Production</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Container -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image gallery preview">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-details">
+        <h4 id="lightboxTitle">Work Preview</h4>
+        <p id="lightboxDesc">CEO Tailoring production sample.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CONTACT US SECTION & FORM
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-col">
+          <span class="section-eyebrow">Get in Touch</span>
+          <h2 class="section-title">LET'S WORK TOGETHER</h2>
+          <div class="divider divider-left"></div>
+
+          <p style="color: var(--text-muted); margin-bottom: 24px;">
+            Whether you need custom team jerseys, roll-to-roll sublimation printing, or an ongoing B2B manufacturing partnership, we are ready to assist.
+          </p>
+
+          <div class="contact-detail-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-text">
+                <strong>Contact Numbers</strong>
+                <a href="tel:09514556757">09514556757</a> &bull; <a href="tel:09516216321">09516216321</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-text">
+                <strong>Email Address</strong>
+                <a href="mailto:ceotailoring20@gmail.com">ceotailoring20@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="contact-text">
+                <strong>Business Hours</strong>
+                <span>Open daily: 9:00 AM – 9:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <h3 style="font-size: 1.1rem; margin-bottom: 14px;">Production Locations</h3>
+
+          <!-- Location 1 -->
+          <div class="location-box">
+            <h5>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Tagum Branch
+            </h5>
+            <p>New Visayan, Tagum City, Davao del Norte</p>
+            <a href="https://maps.google.com/?q=New+Visayan+Tagum+City+Davao+del+Norte" target="_blank" rel="noopener noreferrer" class="map-placeholder-link">
+              View Tagum Location on Map &rarr;
+            </a>
+          </div>
+
+          <!-- Location 2 -->
+          <div class="location-box">
+            <h5>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Panabo Branch
+            </h5>
+            <p>Rachoville, New Visayas, Panabo City, Davao del Norte</p>
+            <a href="https://maps.google.com/?q=Rachoville+New+Visayas+Panabo+City" target="_blank" rel="noopener noreferrer" class="map-placeholder-link">
+              View Panabo Location on Map &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Quote & Contact Form -->
+        <div>
+          <div class="form-container">
+            <h3>Request a Price Quotation</h3>
+            <p>Fill out your project specifications. Our team will prepare your exact quotation.</p>
+
+            <form id="quoteForm" novalidate>
+              <div class="form-group">
+                <label for="custName">Customer / Company Name <span>*</span></label>
+                <input type="text" id="custName" class="form-control" placeholder="e.g. Juan dela Cruz or Davao Sportswear" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="custPhone">Contact Number <span>*</span></label>
+                  <input type="tel" id="custPhone" class="form-control" placeholder="09xxxxxxxxx" required>
+                </div>
+                <div class="form-group">
+                  <label for="custEmail">Email Address <span>*</span></label>
+                  <input type="email" id="custEmail" class="form-control" placeholder="name@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="custService">Service Needed <span>*</span></label>
+                  <select id="custService" class="form-control" required>
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="Printing Only (₱65/meter)">Printing Only (₱65/meter)</option>
+                    <option value="Printing + Heat Press (Our Fabric - ₱160/pc)">Printing + Heat Press (Our Fabric - ₱160/pc)</option>
+                    <option value="Printing + Heat Press (Customer Fabric - ₱90/pc)">Printing + Heat Press (Customer Fabric - ₱90/pc)</option>
+                    <option value="Custom Jersey Manufacturing">Custom Jersey Manufacturing</option>
+                    <option value="Tailoring & Sewing Services">Tailoring & Sewing Services</option>
+                    <option value="B2B Wholesale / Long-Term Partnership">B2B Wholesale / Long-Term Partnership</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="custQty">Estimated Quantity <span>*</span></label>
+                  <input type="number" id="custQty" min="1" class="form-control" placeholder="e.g. 50" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="custMessage">Message or Specifications <span>*</span></label>
+                <textarea id="custMessage" rows="4" class="form-control" placeholder="Provide details such as fabric type, sizes, design readiness, or preferred delivery dates..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                SUBMIT QUOTATION REQUEST
+              </button>
+
+              <div id="formStatus" class="form-status" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>CEO TAILORING | ATEXCO TAGUM</h4>
+          <p class="footer-tagline">Sublimation Printing | Heat Press | Tailoring</p>
+          <p>
+            Industrial-grade sublimation printing, precision heat press transfer, and tailoring solutions serving Tagum City, Panabo City, and the wider Davao Region.
+          </p>
+        </div>
+
+        <div>
+          <h5>Quick Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#pricing">Price List</a></li>
+            <li><a href="#partnership">Business Partnership</a></li>
+            <li><a href="#works">Our Works</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-info">
+          <h5>Direct Contact</h5>
+          <p>
+            <strong>Phone:</strong><br>
+            <a href="tel:09514556757">09514556757</a> / <a href="tel:09516216321">09516216321</a>
+          </p>
+          <p>
+            <strong>Email:</strong><br>
+            <a href="mailto:ceotailoring20@gmail.com">ceotailoring20@gmail.com</a>
+          </p>
+          <p>
+            <strong>Operating Locations:</strong><br>
+            Tagum City & Panabo City, Davao del Norte
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 CEO Tailoring | Atexco Tagum. All Rights Reserved.</p>
+        <p>Built for professional garment production.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT (ZERO DEPENDENCIES / ZERO PAID APIS)
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Navigation Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mainNav = document.getElementById('mainNav');
+
+      mobileBtn.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('open');
+        mobileBtn.classList.toggle('menu-open', isOpen);
+        mobileBtn.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Close mobile navigation on menu link click
+      mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('open');
+          mobileBtn.classList.remove('menu-open');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // 2. Lightbox Gallery Logic
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxTitle = document.getElementById('lightboxTitle');
+      const lightboxDesc = document.getElementById('lightboxDesc');
+      const lightboxClose = document.getElementById('lightboxClose');
+
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const fullSrc = item.getAttribute('data-full');
+          const title = item.getAttribute('data-title');
+          const desc = item.getAttribute('data-desc');
+
+          lightboxImg.src = fullSrc;
+          lightboxImg.alt = title;
+          lightboxTitle.textContent = title;
+          lightboxDesc.textContent = desc;
+
+          lightboxModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      const closeLightbox = () => {
+        lightboxModal.classList.remove('active');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      };
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) closeLightbox();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+
+      // 3. Client-side Quotation Form Handling
+      // Since no paid backend service is used, it validates the inputs, presents a
+      // professional confirmation state, and generates an automatic pre-filled mailto
+      // link so the request lands straight in your ceotailoring20@gmail.com inbox.
+      const quoteForm = document.getElementById('quoteForm');
+      const formStatus = document.getElementById('formStatus');
+
+      quoteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('custName').value.trim();
+        const phone = document.getElement

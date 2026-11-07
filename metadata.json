@@ -1,0 +1,8 @@
+{
+  "name": "CEO Tailoring | Atexco Tagum",
+  "description": "Professional sublimation printing, industrial heat press, and custom jersey tailoring services in Tagum City and Panabo City, Davao del Norte.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
